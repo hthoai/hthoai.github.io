@@ -8,7 +8,7 @@ export default function Contact({ location }) {
     <Layout>
       <SEO
         title="Social information"
-        description="Arnaud Valensi's social networks details"
+        description="Hoai's social networks details"
         pathname={location.pathname}
       />
       <main
@@ -27,7 +27,7 @@ export default function Contact({ location }) {
         </p>
         <p>
           <a
-            href="https://github.com/ArnaudValensi"
+            href="https://github.com/hthoai"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,7 +36,7 @@ export default function Contact({ location }) {
         </p>
         <p>
           <a
-            href="https://www.linkedin.com/in/arnaud-valensi-04080084/"
+            href="https://www.linkedin.com/in/hthoai"
             target="_blank"
             rel="noreferrer"
           >
@@ -45,7 +45,7 @@ export default function Contact({ location }) {
         </p>
         <p>
           <a
-            href="https://twitter.com/ArnaudValensi"
+            href="https://twitter.com/hthoai1006"
             target="_blank"
             rel="noreferrer"
           >

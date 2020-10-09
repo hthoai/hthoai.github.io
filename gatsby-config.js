@@ -65,13 +65,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Arnaud Valensi`,
-        short_name: `Arnaud Valensi`,
+        name: `Hoai`,
+        short_name: `Hoai`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/hoai.png`,
         theme_color_in_head: false,
       },
     },
