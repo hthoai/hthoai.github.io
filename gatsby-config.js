@@ -69,7 +69,7 @@ module.exports = {
         short_name: `Hoai`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#0F4C81`,
+        theme_color: `#0f4c81`,
         display: `minimal-ui`,
         icon: `src/images/hoai.png`,
         theme_color_in_head: false,
