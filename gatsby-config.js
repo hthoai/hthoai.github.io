@@ -2,12 +2,12 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Arnaud Valensi`,
-    description: `Arnaud Valensi's personal blog`,
-    author: `Arnaud Valensi`,
-    siteUrl: `https://arnaudvalensi.github.io`, // No trailing slash allowed.
+    title: `Hoai`,
+    description: `Hoai's personal blog`,
+    author: `Hoai Hong Thanh`,
+    siteUrl: `https://hthoai.github.io`, // No trailing slash allowed.
     social: {
-      twitter: `ArnaudValensi`,
+      twitter: `hthoai1006`,
     },
   },
   plugins: [
@@ -69,7 +69,7 @@ module.exports = {
         short_name: `Hoai`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffa7c4`,
+        theme_color: `#0F4C81`,
         display: `minimal-ui`,
         icon: `src/images/hoai.png`,
         theme_color_in_head: false,

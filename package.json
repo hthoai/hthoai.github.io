@@ -1,7 +1,7 @@
 {
-  "name": "arnaud-valensi-blog",
+  "name": "hoai-blog",
   "private": true,
-  "description": "Arnaud Valensi's blog",
+  "description": "Hoai's blog",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -50,6 +50,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArnaudValensi/blog"
+    "url": "https://github.com/hthoai/blog"
   }
 }

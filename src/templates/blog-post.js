@@ -39,7 +39,7 @@ export default function BlogPost({ data, pageContext, location }) {
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-        <div
+        {/* <div
           css={css`
             margin-top: ${rhythm(1)};
           `}
@@ -52,7 +52,7 @@ export default function BlogPost({ data, pageContext, location }) {
             📜
           </span>{" "}
           I'm looking for a freelance mission. <Link to="/">See here.</Link>
-        </div>
+        </div> */}
       </main>
       <nav
         css={css`
