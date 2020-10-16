@@ -1,0 +1,682 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.44 'Fira Sans',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Fira Sans',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:2.15rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.58293rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.35824rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.85805rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;color:hsla(0,0%,0%,1);font-family:'Patua One',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.79482rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}ul{margin-left:1.44rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.44rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;font-size:0.85rem;line-height:1.44rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;font-size:1rem;line-height:1.44rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}blockquote{margin-left:0;margin-right:1.44rem;margin-top:0;padding-bottom:0;padding-left:1.17rem;padding-right:0;padding-top:0;margin-bottom:1.44rem;font-size:1.16543rem;line-height:1.44rem;color:inherit;opacity:0.8;font-style:italic;border-left:0.27rem solid;border-left-color:inherit;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.44rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.44rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.44rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.44rem;margin-bottom:calc(1.44rem / 2);margin-top:calc(1.44rem / 2);}li > ul{margin-left:1.44rem;margin-bottom:calc(1.44rem / 2);margin-top:calc(1.44rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.44rem / 2);}code{font-size:0.85rem;line-height:1.44rem;}kbd{font-size:0.85rem;line-height:1.44rem;}samp{font-size:0.85rem;line-height:1.44rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96rem;padding-right:0.96rem;padding-top:0.72rem;padding-bottom:calc(0.72rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h1, h2, h3, h4, h5, h6{color:var(--textTitle);}a{color:var(--textLink);text-decoration:none;}a:hover{text-decoration:underline;text-decoration-color:var(--textLink);}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.44rem;color:hsla(0,0%,0%,0.8);font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){blockquote{margin-left:-1.08rem;margin-right:0;padding-left:0.81rem;}}</style><style data-href="/styles.3bfb0ee238bd4abe7721.css">body{--bg:#f8f8f2;--websiteTitle:#e06882;--textNormal:#282a36;--textTitle:#1a3f97;--menuLink:#e06882;--textLink:#1898d4;--inlineCode-bg:rgba(223,105,130,0.27);--inlineCode-text:#1a1a1a;background-color:var(--bg);transition:color .2s ease-out,background .2s ease-out}body,body.dark{--code-bg:#333a4b}body.dark{-webkit-font-smoothing:antialiased;--bg:#232838;--websiteTitle:#dd8a9c;--textNormal:#f8f8f2;--textTitle:#f8d72c;--menuLink:#dd8a9c;--textLink:#8dd6f8;--inlineCode-bg:#333a4b;--inlineCode-text:#e6e6e6}:not(pre)>code[class*=language-]{background:var(--inlineCode-bg);color:var(--inlineCode-text)}pre[class*=language-]{background:var(--code-bg)}:not(pre)>code[class*=language-],pre[class*=language-]{font-variant-ligatures:none;font-feature-settings:normal}@font-face{font-display:swap;font-family:Fira Sans;font-style:normal;font-weight:400;src:url(/static/fira-sans-v10-latin-regular-9720cc0c5575cb480360ff90655df31b.eot);src:local("Fira Sans Regular"),local("FiraSans-Regular"),url(/static/fira-sans-v10-latin-regular-9720cc0c5575cb480360ff90655df31b.eot?#iefix) format("embedded-opentype"),url(/static/fira-sans-v10-latin-regular-78773521b0ffe376bc7edd8ec2a591fb.woff2) format("woff2"),url(/static/fira-sans-v10-latin-regular-baa3b51e20ff84bf4964223288c0ba10.woff) format("woff"),url(/static/fira-sans-v10-latin-regular-ff33952a9f8385a840074521efbc8f38.ttf) format("truetype"),url(/static/fira-sans-v10-latin-regular-7307389c2218fa743b42f50e6452bee6.svg#FiraSans) format("svg")}@font-face{font-display:swap;font-family:Fira Sans;font-style:italic;font-weight:400;src:url(/static/fira-sans-v10-latin-italic-e5ca852f28b1971384c2820a1471a858.eot);src:local("Fira Sans Italic"),local("FiraSans-Italic"),url(/static/fira-sans-v10-latin-italic-e5ca852f28b1971384c2820a1471a858.eot?#iefix) format("embedded-opentype"),url(/static/fira-sans-v10-latin-italic-ee9f23730618d80fcb96905621eb5155.woff2) format("woff2"),url(/static/fira-sans-v10-latin-italic-cd0194f96a0385782a34f706d9475b9b.woff) format("woff"),url(/static/fira-sans-v10-latin-italic-2c48ec759f062c6d6c2495f65d766b56.ttf) format("truetype"),url(/static/fira-sans-v10-latin-italic-e391c8e818791fb2a2ae605f9634c383.svg#FiraSans) format("svg")}@font-face{font-display:swap;font-family:Fira Sans;font-style:normal;font-weight:700;src:url(/static/fira-sans-v10-latin-700-832c99425622b1dd326dc39dc4cbd963.eot);src:local("Fira Sans Bold"),local("FiraSans-Bold"),url(/static/fira-sans-v10-latin-700-832c99425622b1dd326dc39dc4cbd963.eot?#iefix) format("embedded-opentype"),url(/static/fira-sans-v10-latin-700-2ecb426f85ffc1c53b677556210e629f.woff2) format("woff2"),url(/static/fira-sans-v10-latin-700-4d2dfa0d7366eb8ba6e2d9cc5ef6e58d.woff) format("woff"),url(/static/fira-sans-v10-latin-700-603e6faf87382f3b7cf37ef81d64298f.ttf) format("truetype"),url(/static/fira-sans-v10-latin-700-e7cac841f261ca02458dc165de05a40e.svg#FiraSans) format("svg")}@font-face{font-display:swap;font-family:Fira Sans;font-style:italic;font-weight:700;src:url(/static/fira-sans-v10-latin-700italic-90e8b2a38c7767438e1f37d298a13f6f.eot);src:local("Fira Sans Bold Italic"),local("FiraSans-BoldItalic"),url(/static/fira-sans-v10-latin-700italic-90e8b2a38c7767438e1f37d298a13f6f.eot?#iefix) format("embedded-opentype"),url(/static/fira-sans-v10-latin-700italic-cfc0cbcef68f3ef1a8b0cbbca2bd4036.woff2) format("woff2"),url(/static/fira-sans-v10-latin-700italic-fc51c09ea9ba4597fa5ad6690a42ad96.woff) format("woff"),url(/static/fira-sans-v10-latin-700italic-f8e0e2fc3f708f128ec23466b48959ad.ttf) format("truetype"),url(/static/fira-sans-v10-latin-700italic-839187f8a8b6acb0f69f5d6d95e37ef5.svg#FiraSans) format("svg")}@font-face{font-display:swap;font-family:Patua One;font-style:normal;font-weight:400;src:url(/static/patua-one-v11-latin-regular-834dba5e4b3aab2298856ba4d9abbb1a.eot);src:local("Patua One"),local("PatuaOne-Regular"),url(/static/patua-one-v11-latin-regular-834dba5e4b3aab2298856ba4d9abbb1a.eot?#iefix) format("embedded-opentype"),url(/static/patua-one-v11-latin-regular-95e3e75c69bd36dae9650e8047f2f32e.woff2) format("woff2"),url(/static/patua-one-v11-latin-regular-52f83ea060e3d2c53c53c51218dfe7e7.woff) format("woff"),url(/static/patua-one-v11-latin-regular-570bf376fc680b48f09a3d821d0fe545.ttf) format("truetype"),url(/static/patua-one-v11-latin-regular-19dda139507952afdad3dfa097a5bf02.svg#PatuaOne) format("svg")}@font-face{font-display:swap;font-family:JetBrainsMono;font-style:normal;font-weight:400;src:url(/static/JetBrainsMono-Regular-fb923cf91681b7f6ed33595c4c248408.eot);src:url(/static/JetBrainsMono-Regular-fb923cf91681b7f6ed33595c4c248408.eot?#iefix) format("embedded-opentype"),url(/static/JetBrainsMono-Regular-21ba2c11275a07ccf3890fbeab585525.woff2) format("woff2"),url(/static/JetBrainsMono-Regular-2fe9a2bdaa6daf61e770a2edb7252040.woff) format("woff"),url(/static/JetBrainsMono-Regular-cdba55f4b039e20857ba2c1793d2a1d2.ttf) format("truetype")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;text-shadow:0 1px rgba(0,0,0,.3);font-family:JetBrainsMono;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#6272a4}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#ff79c6}.token.boolean,.token.number{color:#bd93f9}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#50fa7b}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#f1fa8c}.token.keyword{color:#8be9fd}.token.important,.token.regex{color:#ffb86c}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.react-toggle{touch-action:pan-x;display:inline-block;position:relative;cursor:pointer;background-color:transparent;border:0;padding:0;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}.react-toggle-screenreader-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.react-toggle-track{width:50px;height:24px;padding:0;border-radius:30px;background-color:#0f1114;transition:all .2s ease}.react-toggle-track-check{position:absolute;width:17px;height:17px;left:5px;top:0;bottom:0;margin-top:auto;margin-bottom:auto;line-height:0;opacity:0;transition:opacity .25s ease}.react-toggle--checked .react-toggle-track-check,.react-toggle-track-x{opacity:1;transition:opacity .25s ease}.react-toggle-track-x{position:absolute;width:17px;height:17px;right:5px;top:0;bottom:0;margin-top:auto;margin-bottom:auto;line-height:0}.react-toggle--checked .react-toggle-track-x{opacity:0}.react-toggle-thumb{position:absolute;top:1px;left:1px;width:22px;height:22px;border-radius:50%;background-color:#fafafa;box-sizing:border-box;transition:all .5s cubic-bezier(.23,1,.32,1) 0ms;transform:translateX(0)}.react-toggle--checked .react-toggle-thumb{transform:translateX(26px);border-color:#19ab27}.react-toggle--focus .react-toggle-thumb{box-shadow:0 0 2px 3px #ffa7c4}.react-toggle:active .react-toggle-thumb{box-shadow:0 0 5px 5px #ffa7c4}</style><meta name="generator" content="Gatsby 2.24.50"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/favicon-32x32.png?v=56c08f6c911020e4baddd97ec1edf4d8" type="image/png"/><link rel="manifest" href="/manifest.webmanifest"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=56c08f6c911020e4baddd97ec1edf4d8"/><title data-react-helmet="true">Lược sử mạng nơ-ron và học sâu (Phần 2) | Hoai</title><meta data-react-helmet="true" name="description" content="Thời kỳ nở hoa của mạng nơ-ron (những năm 1980-2000)."/><meta data-react-helmet="true" property="og:title" content="Lược sử mạng nơ-ron và học sâu (Phần 2) | Hoai"/><meta data-react-helmet="true" property="og:url" content="https://hthoai.github.io/blog/luoc-su-mang-no-ron-va-hoc-sau-phan-2/"/><meta data-react-helmet="true" property="og:description" content="Thời kỳ nở hoa của mạng nơ-ron (những năm 1980-2000)."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:image" content="https://hthoai.github.io/static/9859fdc9bf7bcd8f3829c263beb813ee/c7a62/2a11b49113b4847fa2304e22b339633af8dc42bd.jpg"/><meta data-react-helmet="true" property="og:image:alt" content="Lược sử mạng nơ-ron và học sâu (Phần 2)"/><meta data-react-helmet="true" property="og:image:width" content="1200"/><meta data-react-helmet="true" property="og:image:height" content="630"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="@hthoai1006"/><meta data-react-helmet="true" name="twitter:title" content="Lược sử mạng nơ-ron và học sâu (Phần 2) | Hoai"/><meta data-react-helmet="true" name="twitter:description" content="Thời kỳ nở hoa của mạng nơ-ron (những năm 1980-2000)."/><meta data-react-helmet="true" name="google-site-verification" content="3mGNu0NnxE9zl9pgFOQw1XrhYuJRQ6ENkVEvgOTGRF4"/><link as="script" rel="preload" href="/webpack-runtime-c7481c731e7537e49e63.js"/><link as="script" rel="preload" href="/framework-b20a991a486fcb196e62.js"/><link as="script" rel="preload" href="/app-4923a30df5fbaef1990b.js"/><link as="script" rel="preload" href="/styles-c2fe8482057191dca484.js"/><link as="script" rel="preload" href="/commons-92015316d9bca23ba7df.js"/><link as="script" rel="preload" href="/f22e65116e117537b01f54252158ffae588a680c-df679a80f710d870b661.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-e7e00cae44b30b25e00d.js"/><link as="fetch" rel="preload" href="/page-data/blog/luoc-su-mang-no-ron-va-hoc-sau-phan-2/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3868140423.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4085307986.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="1hrztf4">.css-1hrztf4{color:var(--textNormal);padding:2.88rem 1.44rem;margin:0 auto;max-width:680px;-webkit-transition:"color 2s ease-out, background 2s ease-out";transition:"color 2s ease-out, background 2s ease-out";}</style><div class="css-1hrztf4"><header><style data-emotion-css="xjeber">.css-xjeber{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2.88rem;}@media (min-width:650px){.css-xjeber{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin-bottom:0.72rem;}}</style><div class="css-xjeber"><style data-emotion-css="1r71s5n">.css-1r71s5n{width:100%;margin-bottom:2.88rem;text-align:center;}@media (min-width:650px){.css-1r71s5n{width:unset;margin-bottom:0;text-align:unset;}}</style><a class="css-1r71s5n" href="/"><style data-emotion-css="102jt4i">.css-102jt4i{display:inline-block;font-style:normal;margin-bottom:0;color:var(--websiteTitle);}</style><h2 class="css-102jt4i">Hoai</h2></a><style data-emotion-css="1ji94jq">.css-1ji94jq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-left:0;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (min-width:650px){.css-1ji94jq{margin-left:auto;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}</style><nav class="css-1ji94jq"><style data-emotion-css="jnu8ql">.css-jnu8ql{-webkit-text-decoration:none;text-decoration:none;color:var(--menuLink);-webkit-transition:opacity 0.2s ease-out;transition:opacity 0.2s ease-out;opacity:60%;}.css-jnu8ql:hover{opacity:100%;-webkit-text-decoration:none;text-decoration:none;}.css-jnu8ql + .css-jnu8ql{margin-top:1.44rem;}@media (min-width:650px){.css-jnu8ql + .css-jnu8ql{margin-top:0;margin-left:1.44rem;}}</style><a class="css-jnu8ql" href="/">About Me</a><a class="css-jnu8ql" style="opacity:1" href="/blog/">Blog</a><a class="css-jnu8ql" href="/contact/">Socials</a></nav></div><style data-emotion-css="15ps6ky">.css-15ps6ky{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;margin-bottom:4.32rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}@media (min-width:650px){.css-15ps6ky{-webkit-box-pack:unset;-webkit-justify-content:unset;-ms-flex-pack:unset;justify-content:unset;}}</style><div class="css-15ps6ky"><style data-emotion-css="15p9n5u">.css-15p9n5u{height:24px;}</style><div class="css-15p9n5u"></div></div></header><div><style data-emotion-css="j7qwjs">.css-j7qwjs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><main class="css-j7qwjs"><style data-emotion-css="34n1rj">.css-34n1rj{margin-bottom:1.44rem;}</style><a class="css-34n1rj" href="/blog/">← Back</a><article><h1>Lược sử mạng nơ-ron và học sâu (Phần 2)</h1><div><h1>Phần 2: Thời kỳ nở hoa của mạng nơ-ron (những năm 1980-2000)</h1>
+<h2>Khả năng thị giác</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/102e273306efd378fbc89bdfe2b7e357/cb69c/1486ef3e63f8611569dac3510e12300d39fbcd2b.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.35294117647059%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAMC/9oADAMBAAIQAxAAAAHVU1FigWIX/8QAGhABAQACAwAAAAAAAAAAAAAAAQIAAxExMv/aAAgBAQABBQJ7auRtco4dnnP/xAAXEQEAAwAAAAAAAAAAAAAAAAAAARFR/9oACAEDAQE/AdXL/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABkQAAEFAAAAAAAAAAAAAAAAABAAESEyQv/aAAgBAQAGPwKzrIg//8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAIRAxUUH/2gAIAQEAAT8hEi5V5qMxgyyoACILU9OrH//aAAwDAQACAAMAAAAQC8//xAAXEQEBAQEAAAAAAAAAAAAAAAABAEER/9oACAEDAQE/EOoocltv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EMHBgF//xAAdEAEBAQEAAQUAAAAAAAAAAAABESEAMRBRYXHR/9oACAEBAAE/EBVOPMHwOkVBMCpfHFxCEy/vFFA4cu70XOutc+vb0//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1486ef3e63f8611569dac3510e12300d39fbcd2b.jpeg"
+        title="1486ef3e63f8611569dac3510e12300d39fbcd2b.jpeg"
+        src="/static/102e273306efd378fbc89bdfe2b7e357/cb69c/1486ef3e63f8611569dac3510e12300d39fbcd2b.jpg"
+        srcset="/static/102e273306efd378fbc89bdfe2b7e357/651be/1486ef3e63f8611569dac3510e12300d39fbcd2b.jpg 170w,
+/static/102e273306efd378fbc89bdfe2b7e357/cb69c/1486ef3e63f8611569dac3510e12300d39fbcd2b.jpg 320w"
+        sizes="(max-width: 320px) 100vw, 320px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Mạng LeNet của Yann LeCun (</em><em><a href="http://yann.lecun.com/exdb/lenet/gifs/asamples.gif" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Nhờ những hé mở về cách huấn luyện mạng nơ-ron đa lớp, chủ đề này một lần nữa nóng trở lại và tham vọng cao cả của Rosenblatt dường như đã trong tầm tay. Chỉ đến năm 1989, một phát hiện quan trọng khác (ngày nay được trích dẫn phổ biến trong các tài liệu của ngành) được xuất bản: “Mạng truyền xuôi đa lớp là các máy xấp xỉ phổ quát”. Về cơ bản, nó đã được chứng minh toán học rằng nhiều lớp cho phép mạng nơ-ron thực thi bất kỳ hàm nào, và hiển nhiên là cả XOR.</p>
+<p>Trên lý thuyết là thế, khi bộ nhớ vô tận và sức mạnh tính toán cần thiết để thực hiện nằm trong trí tưởng tượng, thực tế thì lan truyền ngược có cho phép mạng nơ-ron được dùng cho bất kỳ thứ gì? Cũng trong năm 1989, Yann LeCun và các cộng sự ở Bell Labs (phòng thí nghiệm thuộc AT&#x26;T) đã chứng minh một ứng dụng thực tế rất quan trọng của lan truyền ngược trong ”Backpropagation Applied to Handwritten Zip Code Recognition” (Ứng dụng lan truyền ngược cho bài toán nhận dạng mã bưu chính viết tay). Bạn có thể nghĩ rằng việc máy tính hiểu được chính xác các chữ số viết tay chẳng lấy làm ấn tượng gì, nhưng trước khi bài báo này được xuất bản, những nét vẽ nguệch ngoạc của con người thật sự làm khó bộ óc ngăn nắp của những chiếc máy tính. Bài báo khi thực nghiệm trên bộ dữ liệu lớn của Dịch vụ Bưu chính Hoa Kỳ (USPS) đã cho thấy mạng nơ-ron hoàn toàn có khả năng thực hiện tác vụ này. Quan trọng hơn cả, đây là vấn đề đầu tiên nêu bật nhu cầu thực tế về những sửa đổi quan trọng của mạng nơ-ron ngoài kỹ thuật lan truyền ngược ban đầu, để dần tiến đến những mô hình học sâu hiện đại.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 411px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/216b393586dc1de48e09ff1e80daa69b/d3fc3/771f093efe1ade75e4a26f0851e89f14fc6392f0.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.52941176470588%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHvSMYwlTJuAf/EABwQAQABBAMAAAAAAAAAAAAAAAEAAxARMhIhQf/aAAgBAQABBQL2EychGz1BLVNKOs//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAaEAACAgMAAAAAAAAAAAAAAAAQEQABIEGB/9oACAEBAAY/Ait4MXOj/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBYRBRcf/aAAgBAQABPyHdIuXc0mj4XFH2YZic1L8lLtBsxGjDTFb6p4//2gAMAwEAAgADAAAAEAMODP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQADAAMAAwAAAAAAAAAAAAEAESExQXEQUYH/2gAIAQEAAT8QeUdfcyLFPTXUQnb9Zc7K2ZleyiWl0zYKMT8iAFg1QtYnajhkAHQx3QGI0kYS4g8z4//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="771f093efe1ade75e4a26f0851e89f14fc6392f0.jpeg"
+        title="771f093efe1ade75e4a26f0851e89f14fc6392f0.jpeg"
+        src="/static/216b393586dc1de48e09ff1e80daa69b/d3fc3/771f093efe1ade75e4a26f0851e89f14fc6392f0.jpg"
+        srcset="/static/216b393586dc1de48e09ff1e80daa69b/651be/771f093efe1ade75e4a26f0851e89f14fc6392f0.jpg 170w,
+/static/216b393586dc1de48e09ff1e80daa69b/d30a3/771f093efe1ade75e4a26f0851e89f14fc6392f0.jpg 340w,
+/static/216b393586dc1de48e09ff1e80daa69b/d3fc3/771f093efe1ade75e4a26f0851e89f14fc6392f0.jpg 411w"
+        sizes="(max-width: 411px) 100vw, 411px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Hình ảnh trực quan về cách mạng nơ-ron này hoạt động (</em><em><a href="http://image.slidesharecdn.com/bp2slides-090922011749-phpapp02/95/the-back-propagation-learning-algorithm-10-728.jpg?cb=1253582278" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Cụ thể hơn, lớp ẩn đầu tiên của mạng nơ-ron là lớp tích chập, thay vì mỗi nơ-ron có một trọng số khác nhau với mỗi pixel ảnh đầu vào (40x60=2400 trọng số), thì các nơ-ron chỉ có một tập trọng số nhỏ (5x5=25) được áp dụng trên các vùng nhỏ có cùng kích thước trên ảnh. Vì vậy, nếu có 4 nơ-ron khác nhau cho việc học để phát hiện các đường 45 độ ở mỗi góc trong số 4 góc của ảnh đầu vào, thì một nơ-ron đơn lẻ có thể làm được điều này trên các vùng cục bộ của ảnh. Bước đầu tiên ở các lớp đều tương tự nhau, tuy nhiên đầu vào sẽ là các đặc trưng cục bộ đã tìm được ở lớp ẩn trước đó, thay vì những pixel, và do đó có thể “thấy“ những phần lớn hơn liên tiếp của ảnh vì chúng đang kết hợp thông tin về các vùng cục bộ liên tiếp này. Sau cùng, hai lớp cuối chỉ là các lớp mạng nơ-ron bình thường (mạng truyền xuôi) sử dụng các đặc trưng bậc cao hơn đã được tạo ra bởi các lớp tích chập để xác định ảnh đầu vào tương ứng với chữ số nào. Phương pháp được đề xuất trong bài báo năm 1989 này đã trở thành cơ sở của các hệ thống đọc-kiểm được triển khai trên toàn nước Mỹ, như đã được LeCun chứng minh trong video này:</p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.42857142857143%; position: relative; height: 0; overflow: hidden; " > <div class="embedVideo-container"> <iframe title src="https://www.youtube.com/embed/FwFduRA_L6Q?rel=0" class="embedVideo-iframe" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; " allowfullscreen></iframe> </div> </div></p>
+<p>Nếu không xét rõ về mặt toán học, lý do tại sao các lớp tích chập như trên lại hữu ích là khá trực quan: nếu không có những ràng buộc như vậy, mạng sẽ phải học những thứ đơn giản giống nhau (như phát hiện đường 45 độ, vòng tròn nhỏ) rất nhiều lần trên mỗi phần của ảnh. Nhưng với những ràng buộc này, chỉ cần một nơ-ron cho việc học một đặc trưng đơn giản, số lượng trọng số vì thế cũng ít đi nhiều, và việc tính toán sẽ diễn ra nhanh hơn rất nhiều. Hơn nữa, vì vị trí chính xác đến từng pixel của các đặc trưng như vậy không quan trọng nên nơ-ron về cơ bản có thể bỏ qua các tập con lân cận của ảnh - lấy mẫu con (subsampling), ngày nay được xem là một kiểu gộp - khi áp dụng trọng số, sẽ còn giảm thời gian huấn luyện hơn nữa. Việc bổ sung hai loại lớp này - tích chập (convolutional) và gộp (pooling) là sự khác biệt cơ bản của mạng nơ-ron tích chập (CNNs/ConvNets) so với mạng nơ-ron đơn thuần.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 560px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/39db2308200951139144e4d8d1944da2/9342c/a64a1997569591b78c7befd35620aea526993ead.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.294117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHZXYWOID//xAAZEAEAAgMAAAAAAAAAAAAAAAABAjEQEUH/2gAIAQEAAQUCky2MsNcK/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAARAhAP/aAAgBAQAGPwKCasr/xAAaEAADAAMBAAAAAAAAAAAAAAAAATEQESFh/9oACAEBAAE/IVW7p7ROdMULYpn/2gAMAwEAAgADAAAAECQP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHhABAAIBBAMAAAAAAAAAAAAAAQAhERAxUaFBcfD/2gAIAQEAAT8QDhAI7rWY9RVwO0bmOfuYlC0+Z1Iduk//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="a64a1997569591b78c7befd35620aea526993ead.jpeg"
+        title="a64a1997569591b78c7befd35620aea526993ead.jpeg"
+        src="/static/39db2308200951139144e4d8d1944da2/9342c/a64a1997569591b78c7befd35620aea526993ead.jpg"
+        srcset="/static/39db2308200951139144e4d8d1944da2/651be/a64a1997569591b78c7befd35620aea526993ead.jpg 170w,
+/static/39db2308200951139144e4d8d1944da2/d30a3/a64a1997569591b78c7befd35620aea526993ead.jpg 340w,
+/static/39db2308200951139144e4d8d1944da2/9342c/a64a1997569591b78c7befd35620aea526993ead.jpg 560w"
+        sizes="(max-width: 560px) 100vw, 560px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một ví dụ trực quan về triển khai của CNN (</em><em><a href="https://sites.google.com/site/5kk73gpu2013/assignment/cnn" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Vào thời điểm đó, ý tưởng về tích chập được gọi là “chia sẻ trọng số“, và nó đã thực sự được thảo luận trong phân tích mở rộng năm 1986 về kỹ thuật lan truyền ngược của Rumelhart, Hinton, và Williams. Trên thực tế, nó đã xuất hiện từ trước đó nữa, phân tích năm 1969 của Minsky và Papert về Perceptrons đủ kỹ lưỡng để đặt ra vấn đề về việc thúc đẩy ý tưởng này. Nhưng như trước đây, những người khác cũng đã đưa ra những khám phá mới một cách độc lập, cụ thể là Kunihiko Fukushima vào năm 1980 với khái niệm về Neurocognitron. Và cũng như trước đây, những ý tưởng này được lấy cảm hứng từ các nghiên cứu về não bộ:</p>
+<p>LeCun tiếp tục là người đề xuất chính về CNNs tại Bell Labs. Công trình của ông đã giúp thương mại hóa việc sử dụng hệ thống đọc-kiểm vào giữa những năm 90 - các cuộc nói chuyện và phỏng vấn của ông thường bao gồm thực tế rằng “Vào một thời điểm nào đó ở cuối những năm 90, một trong những hệ thống này sẽ đọc từ 10 đến 20% các mã kiểm ở Mỹ.”</p>
+<h2>Tiến đến học không giám sát</h2>
+<p>Tự động hóa những việc lặp lại và hoàn toàn tẻ nhạt như đọc-kiểm là một ví dụ tuyệt vời về những gì học máy có thể được dùng cho. Còn ứng dụng có vẻ ít được trông đợi hơn? Đó là nén (compression). Nghĩa là tìm một biểu diễn nhỏ hơn của một tập hợp dữ liệu mà từ đó dữ liệu gốc có thể được tái cấu trúc lại. Việc học để nén có thể tốt hơn rất nhiều so với các lược đồ nén sẵn có, khi thuật toán học có thể tìm thấy các đặc trưng bên trong dữ liệu mà các phương pháp lược đồ có thể đã bỏ lỡ. Và nó rất dễ để thực hiện, chỉ cần huấn luyện một mạng nơ-ron với một lớp ẩn nhỏ để xuất ra chính đầu vào:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 337px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a7a81249e529ac4db3a2d7384f964f8a/7f446/e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAASABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAezVYWCaAD//xAAYEAACAwAAAAAAAAAAAAAAAAAAAiAhMf/aAAgBAQABBQJ6Fyf/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAYEAACAwAAAAAAAAAAAAAAAAAAASEwUf/aAAgBAQAGPwKGbR//xAAbEAACAgMBAAAAAAAAAAAAAAABEQAQITFRYf/aAAgBAQABPyEtsnNwmzgVjykOCACv/9oADAMBAAIAAwAAABCQyDz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAfEAEAAgICAgMAAAAAAAAAAAABABEhMVGBEHGRodH/2gAIAQEAAT8QclFOw/QzGJJJk1XW4ANV3ELvG+Jhf418wAMR7ziAKAr14//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpeg"
+        title="e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpeg"
+        src="/static/a7a81249e529ac4db3a2d7384f964f8a/7f446/e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpg"
+        srcset="/static/a7a81249e529ac4db3a2d7384f964f8a/651be/e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpg 170w,
+/static/a7a81249e529ac4db3a2d7384f964f8a/7f446/e59f0dc2a4260aaafb7155ed755c0ce59c40c840.jpg 337w"
+        sizes="(max-width: 337px) 100vw, 337px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một mạng autoencoder - bộ mã hóa tự động (</em><em><a href="http://research.chtsai.org/papers/iml-bkp.html" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Đây là một mạng autoencoder, và là một phương pháp để học nén - mã hóa (encoding) dữ liệu sang định dạng nhỏ gọn hơn, sau đó chuyển nó về đúng dạng ban đầu nhất có thể (auto). Lớp đầu ra sẽ tính kết quả của mạng chỉ dựa trên đầu ra của các nơ-ron ở lớp ẩn, lý tưởng nhất là giống với dữ liệu đầu vào. Vì lớp ẩn có số nơ-ron ít hơn so với lớp đầu vào nên kết quả ở lớp ẩn là một biểu diễn nén của dữ liệu đầu vào mà từ đó có thể tái tạo lại ở lớp đầu ra.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 369px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2a5124ee292f3f5a724af6bed2f6347f/23013/59341d3053df5bf3d414d63279b05eaa2242dc9d.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.11764705882353%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7c70JUaF/8QAGRAAAwADAAAAAAAAAAAAAAAAAAIRASEy/9oACAEBAAEFApRcVhuZs//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAEEAwAAAAAAAAAAAAAAAAABAkGREDHh/9oACAEBAAY/Al3ZNkDjuP/EABwQAQACAgMBAAAAAAAAAAAAAAEAEUFRITFxkf/aAAgBAQABPyFNSC8xYiGub9QXcHM/ZTJ723KNT//aAAwDAQACAAMAAAAQ7A//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxBn/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QJ//EACAQAQACAQMFAQAAAAAAAAAAAAEAESExUXFBYYGRocH/2gAIAQEAAT8QEHjT+GcQT5aE6atv114ijPiZgqbHR442iRoa+T3gWg9T/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="59341d3053df5bf3d414d63279b05eaa2242dc9d.jpeg"
+        title="59341d3053df5bf3d414d63279b05eaa2242dc9d.jpeg"
+        src="/static/2a5124ee292f3f5a724af6bed2f6347f/23013/59341d3053df5bf3d414d63279b05eaa2242dc9d.jpg"
+        srcset="/static/2a5124ee292f3f5a724af6bed2f6347f/651be/59341d3053df5bf3d414d63279b05eaa2242dc9d.jpg 170w,
+/static/2a5124ee292f3f5a724af6bed2f6347f/d30a3/59341d3053df5bf3d414d63279b05eaa2242dc9d.jpg 340w,
+/static/2a5124ee292f3f5a724af6bed2f6347f/23013/59341d3053df5bf3d414d63279b05eaa2242dc9d.jpg 369w"
+        sizes="(max-width: 369px) 100vw, 369px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một cái nhìn rõ ràng hơn về việc nén sử dụng autoencoder (</em><em><a href="http://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Có một lưu ý nhỏ ở đây: thứ duy nhất chúng ta cần để huấn luyện chỉ là dữ liệu đầu vào. Điều này trái ngược với học có giám sát, cần một tập đầu vào - đầu ra (tức dữ liệu có nhãn) để xấp xỉ gần đúng một hàm có thể tính được đầu ra từ những đầu vào đó. Và thật sự, những autoencoder kiểu này không phải là một dạng của học có giám sát, chúng là một hình thức học không giám sát, chỉ cần một tập dữ liệu đầu vào (không có nhãn) để tìm ra một số cấu trúc ẩn trong dữ liệu đó. Nói cách khác, học không giám sát không xấp xỉ một hàm nào cả, mà nó chuyển đổi dữ liệu đầu vào thành một dạng biểu diễn hữu ích khác của chính dữ liệu đó. Ở đây, biểu diễn này chỉ là một biểu diễn nhỏ hơn của dữ liệu gốc mà từ đó vẫn còn có thể được tái tạo lại, nhưng nó cũng có thể được dùng để tìm các nhóm dữ liệu tương tự nhau (phân cụm) hoặc suy diễn các biến tiềm ẩn (một số khía cạnh của dữ liệu ta biết là có tồn tại nhưng giá trị của chúng thì không biết được).</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/134d473efba0664620366532a210ba7d/c08c5/ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40.588235294117645%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABwAQH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFxAAAwEAAAAAAAAAAAAAAAAAABAhEf/aAAgBAQABPyGYRf/aAAwDAQACAAMAAAAQA8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAACAgMAAAAAAAAAAAAAAAAAAREhMUGB/9oACAEBAAE/EHQ1kdFHRxo//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpeg"
+        title="ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpeg"
+        src="/static/134d473efba0664620366532a210ba7d/c08c5/ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpg"
+        srcset="/static/134d473efba0664620366532a210ba7d/651be/ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpg 170w,
+/static/134d473efba0664620366532a210ba7d/d30a3/ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpg 340w,
+/static/134d473efba0664620366532a210ba7d/c08c5/ff57f3ebd4b90377c2e04147de3a08a0b956dde0.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Phân cụm, một ứng dụng rất phổ biến của học không giám sát (</em><em><a href="https://en.wikipedia.org/wiki/K-means_clustering" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Có những ứng dụng không giám sát khác của mạng nơ-ron được khám phá trước và sau phát hiện về kỹ thuật lan truyền ngược, đáng chú ý nhất là Mạng tự tổ chức (Self Organizing Maps) - tạo ra biểu diễn với số chiều thấp hơn của dữ liệu để việc trực quan hóa dễ dàng hơn, và Thuyết cộng hưởng thích nghi (Adapative Resonance Theory) - có thể học để phân loại bất kỳ dữ liệu nào mà không cần biết trước nhãn. Một cách trực quan, nó có thể học được khá nhiều thứ từ dữ liệu không được gán nhãn. Giả sử bạn có một tập dữ liệu về ảnh chữ số viết tay, không kèm theo nhãn về chữ số tương ứng với mỗi ảnh. Một ảnh với chữ số nào đó trong tập dữ liệu rất có thể trông giống như những ảnh khác cùng nhãn, và dù máy tính không biết những ảnh này tương ứng với chữ số nào, nó vẫn có khả năng chỉ ra rằng chúng là ảnh của cùng một chữ số nhất định. Nhận dạng mẫu như này thật sự là tất cả những gì học máy hướng tới, và được cho là cơ sở cho sức mạnh tuyệt vời của bộ não con người. Nhưng trước hết, hãy quay lại với chủ đề về autoencoder.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/58f9baeace065a71fbb5a46e2e487951/ee745/62ee99734283d996dda7409d84503b2dd3700eee.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.76470588235294%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAHn7oUaB//EABkQAAMAAwAAAAAAAAAAAAAAAAECAwAQEf/aAAgBAQABBQLIpOikcO//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BhX//xAAXEQADAQAAAAAAAAAAAAAAAAABEBEh/9oACAECAQE/AaZi/8QAGBABAAMBAAAAAAAAAAAAAAAAAQACESD/2gAIAQEABj8CiWcZnH//xAAZEAEBAAMBAAAAAAAAAAAAAAABABAxQRH/2gAIAQEAAT8h8jFnpmZcuYVdt//aAAwDAQACAAMAAAAQ9z//xAAYEQADAQEAAAAAAAAAAAAAAAAAAREhMf/aAAgBAwEBPxBroOXD/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIUH/2gAIAQIBAT8Q0JpRXp//xAAcEAEBAQACAwEAAAAAAAAAAAABEQAhUTFBYXH/2gAIAQEAAT8QqDHczxrcp+e95SFL391g4wo0ZlKi9u//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="62ee99734283d996dda7409d84503b2dd3700eee.jpeg"
+        title="62ee99734283d996dda7409d84503b2dd3700eee.jpeg"
+        src="/static/58f9baeace065a71fbb5a46e2e487951/ee745/62ee99734283d996dda7409d84503b2dd3700eee.jpg"
+        srcset="/static/58f9baeace065a71fbb5a46e2e487951/651be/62ee99734283d996dda7409d84503b2dd3700eee.jpg 170w,
+/static/58f9baeace065a71fbb5a46e2e487951/d30a3/62ee99734283d996dda7409d84503b2dd3700eee.jpg 340w,
+/static/58f9baeace065a71fbb5a46e2e487951/ee745/62ee99734283d996dda7409d84503b2dd3700eee.jpg 660w"
+        sizes="(max-width: 660px) 100vw, 660px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Mạng tự tổ chức - ánh xạ một lượng lớn vector đầu vào một lưới các nơ-ron đầu ra, trong đó mỗi nơ-ron là một cụm. Các nơ-ron nằm gần nhau có sự tương đương lớn. (</em><em><a href="http://lcdm.astro.illinois.edu/static/code/mlz/MLZ-1.0/doc/html/somz.html" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Như với chia sẻ trọng số, ý tưởng về autoencoder lần đầu tiên được thảo luận trong phân tích mở rộng năm 1986 về lan truyền ngược, và cũng như chia sẻ trọng số, nó lại xuất hiện trong nhiều nghiên cứu ở những năm tiếp đó, bao gồm cả của chính Hinton. Bài báo với tựa đề khá vui nhộn “Autoencoders, Minimum Description Length, and Helmholts Free Energy” (Autoencoder, độ dài mô tả tối thiểu, và năng lượng tự do Helmholtz) cho rằng “cách tiếp cận tự nhiên với học không giám sát là dùng một mô hình xác định phân phối xác suất trên các vector có thể quan sát được“ và sử dụng mạng nơ-ron để học một mô hình như thế. Vì vậy, đây là một điều thú vị khác mà bạn có thể làm với mạng nơ-ron: xấp xỉ những phân phối xác suất.</p>
+<h2>Học những mô hình xác suất</h2>
+<p>Trên thực tế, trước khi là đồng tác giả của bài báo năm 1986 về thuật toán học lan truyền ngược, Hinton đã nghiên cứu về hướng tiếp cận mạng nơ-ron để học các phân phối xác suất trong “A Learning Algorithm for Boltzmann Machines” (Một thuật toán học cho các máy Boltzmann), 1985. Máy Boltzmann là một loại mạng nơ-ron có các node rất giống với Perceptrons, nhưng thay vì tính đầu ra dựa trên đầu vào và trọng số, mỗi node trong mạng có thể tính xác suất nó có giá trị là 0 hay 1 dựa trên giá trị của các node được kết nối và trọng số tương ứng. Do đó, các node là ngẫu nhiên - chúng hoạt động theo phân phối xác suất, thay vì một cách tất định biết trước. Boltzmann trong bài báo này đề cập đến phân bố xác suất liên quan đến các trạng thái vật chất của hạt trong một hệ thống dựa trên năng lượng hạt và nhiệt độ nhiệt động của hệ thống đó. Phân phối này không chỉ là định nghĩa toán học của của máy Boltzmann mà góp phần làm sáng tỏ nó - các node trong mạng có trạng thái và năng lượng riêng, quá trình học ở đây dựa trên việc tối thiểu hóa năng lượng của hệ thống - một cảm hứng trực tiếp từ nhiệt động lực học. Mặc dù không được trực quan lắm, cách giải thích dựa trên năng lượng này thực sự chỉ là một ví dụ cho mô hình dựa trên năng lượng và phù hợp với khung lý thuyết về học dựa trên năng lượng mà nhiều thuật toán học có thể được thể hiện.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c7076fe67d8949d88ac7cb1dec0a6e49/c08c5/e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd5XIxh//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAERIP/aAAgBAQABBQKCz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAAQAREhQeH/2gAIAQEAAT8hEs9KW1//2gAMAwEAAgADAAAAEIAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxAAAgMAAwAAAAAAAAAAAAAAAREAECFBYXH/2gAIAQEAAT8QQPTvcYhPiZwJyaWa/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpeg"
+        title="e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpeg"
+        src="/static/c7076fe67d8949d88ac7cb1dec0a6e49/c08c5/e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpg"
+        srcset="/static/c7076fe67d8949d88ac7cb1dec0a6e49/651be/e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpg 170w,
+/static/c7076fe67d8949d88ac7cb1dec0a6e49/d30a3/e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpg 340w,
+/static/c7076fe67d8949d88ac7cb1dec0a6e49/c08c5/e4147927defc7b9e4cfdfc17eb209d9f656abdd1.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một mô hình xác suất (còn được gọi là mô hình bayesian) đơn giản - một máy Boltzmann về cơ bản giống như trên nhưng kết hợp với các kết nối vô hướng/đối xứng và trọng số có thể huấn luyện để học  các xác suất theo một kiểu cụ thể (</em><em><a href="https://commons.wikimedia.org/wiki/File:SimpleBayesNet.svg" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Trở lại với máy Boltzmann. Khi các node như vậy được kết hợp với nhau thành một mạng, chúng tạo thành một đồ thị, cũng như là một mô hình trực quan của dữ liệu. Về cơ bản, chúng có thể làm những điều rất giống với mạng nơ-ron bình thường: một vài node ẩn tính xác suất của các biến ẩn (những đầu ra - phân loại hoặc đặc trưng của dữ liệu) dựa trên giá trị của node biểu diễn các biến hữu hình (những đầu vào - pixel ảnh, ký tự văn bản...). Trong ví dụ cổ điển của chúng tôi về phân loại ảnh chữ số, những biến ẩn là giá trị thật của các chữ số, và những biến hữu hình là các pixel ảnh. Ví dụ với đầu vào là ảnh của chữ số ”1”, ta đã biết giá trị của các node hữu hình, và node ẩn mô hình hóa xác suất của ảnh đại diện cho ”1” sẽ có xác suất đầu ra cao.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 433px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3a00d84d0256a41172412b7adad210b3/3561e/d0b4ff1a3a433248c971863a58ee6574de2300bd.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 94.70588235294117%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAECAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHr0y0udlCaAkH/xAAaEAACAgMAAAAAAAAAAAAAAAABAgAxEBEh/9oACAEBAAEFAnfu2AjYENCp/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQMBAT8BI//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/AWP/xAAZEAEAAgMAAAAAAAAAAAAAAAABAAIhMEH/2gAIAQEABj8CadgGdH//xAAaEAEBAQEAAwAAAAAAAAAAAAABEQAxEGGB/9oACAEBAAE/ISQ0R3fdpcNwbdLLz3gTdMPD/9oADAMBAAIAAwAAABBECDz/xAAXEQEAAwAAAAAAAAAAAAAAAAARASAh/9oACAEDAQE/ENrNP//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QD//EAB4QAQADAAICAwAAAAAAAAAAAAEAESExURCBYbHB/9oACAEBAAE/EGRzhPf1L4iGmD+wBY3HtmGeupbIqq7BxwZBHlvdhuzqAHPnx//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="d0b4ff1a3a433248c971863a58ee6574de2300bd.jpeg"
+        title="d0b4ff1a3a433248c971863a58ee6574de2300bd.jpeg"
+        src="/static/3a00d84d0256a41172412b7adad210b3/3561e/d0b4ff1a3a433248c971863a58ee6574de2300bd.jpg"
+        srcset="/static/3a00d84d0256a41172412b7adad210b3/651be/d0b4ff1a3a433248c971863a58ee6574de2300bd.jpg 170w,
+/static/3a00d84d0256a41172412b7adad210b3/d30a3/d0b4ff1a3a433248c971863a58ee6574de2300bd.jpg 340w,
+/static/3a00d84d0256a41172412b7adad210b3/3561e/d0b4ff1a3a433248c971863a58ee6574de2300bd.jpg 433w"
+        sizes="(max-width: 433px) 100vw, 433px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một ví dụ của máy Boltzmann. Mỗi dòng có một trọng số liên kết, như với mạng nơ-ron. Lưu ý rằng không có khái niệm về lớp ở đây, mọi thứ có thể được kết nối với nhau. Chúng ta sẽ nói về biến thể này trên mạng nơ-ron sau. (</em><em><a href="https://en.wikipedia.org/wiki/File:Boltzmannexamplev1.png" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Vì vậy, đối với nhiệm vụ phân loại, giờ đây đã có một cách hay để tính xác suất của từng loại. Điều này rất giống với việc thực sự tính giá trị đầu ra của một mạng nơ-ron phân loại thông thường, nhưng những mạng này có một điểm hay khác: chúng có thể tạo ra dữ liệu đầu vào một cách hợp lý. Bởi theo như các phương trình xác suất có liên quan - mạng không chỉ học giá trị xác suất của các biến ẩn từ giá trị đã biết của các biến hữu hình, mà còn ở chiều ngược lại, những xác suất hữu hình từ các giá trị ẩn. Vì vậy, nếu chúng ta muốn tạo ra ảnh chữ số ”1”, các node tương ứng với các biến pixel có xác suất xuất ra 1 đã được biết, và hình ảnh có thể được tạo theo xác suất đó. Những mạng này là mô hình sinh ảnh (generative graphical models). Mặc dù có thể thực hiện việc học có giám sát cho các mục đích tương tự như với mạng nơ-ron bình thường, những tác vụ học không giám sát như học một mô hình sinh tốt hay học theo xác suất cấu trúc ẩn của dữ liệu thường là những gì mạng này được dùng cho. Hầu hết những điều này thật sự không mới lạ, nhưng thuật toán học được trình bày và công thức cụ thể đã hiện thực nó là một điểm mới, như được nêu trong chính bài báo:</p>
+<p>Nếu không đi sâu vào chi tiết thuật toán thì đây là một số điểm nổi bật: nó là một biến thể của những thuật toán hợp lý cực đại (maximum-likelihood), hiểu một cách đơn giản thì nó tìm cách tối đa hóa xác suất của những giá trị node hữu hình (visible) trong mạng khớp với những giá trị chính xác đã biết. Việc tính giá trị thực tế có khả năng xảy ra cao nhất cho tất cả các node cùng lúc hóa ra lại quá tốn chi phí, do đó trong huấn luyện Gibbs Sampling (lấy mẫu Gibbs) - bắt đầu mạng với các giá trị node ngẫu nhiên và gán lại giá trị cho các node dựa trên dựa trên giá trị kết nối của chúng trong từng vòng lặp - được dùng để cung cấp một số giá trị thực đã biết. Khi học bằng cách sử dụng một tập huấn luyện, các node hữu hình được gán dựa trên giá trị của mẫu huấn luyện hiện tại, vì vậy việc lấy mẫu được thực hiện là để tìm giá trị cho các node ẩn. Cụ thể, khi một số giá trị ”thực” được lấy mẫu, chúng ta có thể làm điều tương tự như với lan truyền ngược - lấy đạo hàm cho mỗi trọng số để xem chúng ta có thể thay đổi thế nào để tăng xác suất thực hiện đúng của mạng.</p>
+<p>Như với mạng nơ-ron, thuật toán có thể được thực hiện theo kiểu có giám sát (với những giá trị đã biết cho các node ẩn) hoặc theo kiểu không giám sát. Mặc dù thuật toán đã được chứng minh hoạt động được (đáng chú ý là với cùng bài toán mã hóa mà autoencoder giải quyết) nhưng đã sớm thấy rõ là nó không hoạt động tốt lắm - bài báo “Connectionist learning of belief networks” (Học kết nối của các mô hình xác suất) của Redford M. Neal xuất bản năm 1992 đã chứng minh nhu cầu về một cách tiếp cận nhanh hơn bằng cách chỉ ra rằng: “Những khả năng này sẽ làm cho máy Boltzmann trở nên hấp dẫn trong nhiều ứng dụng, nếu quy trình học của nó không thường bị xem là chậm một cách khó chấp nhận”. Và vì vậy Neal đã đưa ra một ý tưởng tương tự trong mô hình xác suất, về cơ bản giống như một máy Boltzmann với các kết nối truyền xuôi và có hướng (thế nên lại có các lớp, như với mạng nơ-ron trước đó, và không giống với máy Boltzmann vừa nêu ở trên). Với việc không liên quan gì đến toán xác suất, thay đổi này cho phép mạng được huấn luyện với thuật toán học nhanh hơn. Chúng ta đã thực sự thấy một mô hình xác suất phía trên với ”bình tưới” và những ”giọt nước”, và thuật ngữ này (belief net) được lựa chọn một cách chính xác bởi vì loại mô hình dựa trên xác suất này có mối quan hệ chặt chẽ với các ý tưởng từ toán xác suất, bên cạnh mối quan hệ với học máy.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/da4883222ba14945a9d1581bd19a46a2/80e3c/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe2yigf/xAAZEAEAAgMAAAAAAAAAAAAAAAAAAREhMUH/2gAIAQEAAQUCtpDuUP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABsQAAMBAAMBAAAAAAAAAAAAAAABESFBUWFx/9oACAEBAAE/IW9aL2+2jVbL4NOsOGFTT//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMUFRof/aAAgBAQABPxDYobhBwCPByLnj7jJSDHw4kgte8QMVCS6wCKt7c//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpeg"
+        title="4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpeg"
+        src="/static/da4883222ba14945a9d1581bd19a46a2/7bf67/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg"
+        srcset="/static/da4883222ba14945a9d1581bd19a46a2/651be/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg 170w,
+/static/da4883222ba14945a9d1581bd19a46a2/d30a3/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg 340w,
+/static/da4883222ba14945a9d1581bd19a46a2/7bf67/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg 680w,
+/static/da4883222ba14945a9d1581bd19a46a2/80e3c/4c1e5b671dd3ceed0ec56ae907438cfd1b2ae034.jpg 720w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một diễn giải về mô hình xác suất (</em><em><a href="http://www.slideserve.com/Leo/restricted-boltzmann-machines-and-deep-belief-networks" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Mặc dù cách tiếp cận này là một bước tiến so với máy Boltzmann, nó vẫn còn quá chậm - phép toán để xác định chính xác các mối quan hệ xác suất giữa các biến có chi phí tính toán cao, lại không có thủ thuật nào để đơn giản hóa. Vì vậy, Hinton cùng Neal và hai đồng tác giả khác, đã sớm đưa ra các thủ thuật bổ sung trong “The wake-sleep algorithm for unsupervised neural networks” (Thuật toán thức-ngủ cho các mạng nơ-ron không giám sát), xuất bản năm 1995. Những thủ thuật này có thiết lập hơi khác so với mô hình xác suất (belief net), được gọi là máy Helmholtz. Ý tưởng chính là có các bộ trọng số riêng biệt để suy ra các biến ẩn từ các biến hữu hình (trọng số nhận dạng) và ngược lại (trọng số sinh), và giữ nguyên khía cạnh có hướng ở mô hình xác suất của Neal. Điều này cho phép việc huấn luyện diễn ra nhanh hơn nhiều, đồng thời có thể áp dụng cho các bài toán học có giám sát và không giám sát của máy Boltzmann.</p>
+<p>Sau cùng, mô hình xác suất đã có thể được huấn luyện nhanh chóng. Dù không là một ảnh hưởng toàn diện, sự tiến bộ của thuật toán này là một bước tiến đủ quan trọng cho việc huấn luyện không giám sát các mô hình xác suất - có thể xem là người bạn đồng hành với ấn phẩm gần một thập kỷ nay về lan truyền ngược. Dẫu vậy, đến thời điểm này, các phương pháp học máy mới cũng bắt đầu xuất hiện và mọi người lại bắt đầu hoài nghi về mạng nơ-ron vì chúng dường như dựa trên trực giác và máy tính vẫn chưa thể đáp ứng được nhu cầu tính toán của chúng. Như chúng ta sẽ thấy ở phần sau, một ”mùa đông AI” mới của mạng nơ-ron đã bắt đầu chỉ vài năm sau...</p>
+<h2>Học cách đưa ra quyết định</h2>
+<p>Sau khi khám phá ra ứng dụng của mạng nơ-ron trong học không giám sát, hãy cũng xem qua chúng được sử dụng như thế nào trong nhánh thứ ba của học máy: học tăng cường (reinforcement learning). Điều này đòi hỏi nhiều định nghĩa toán học để giải thích rõ ràng, chính thống, một cách dễ hiểu thì học tăng cường được dùng để: học cách đưa ra quyết định đúng đắn. Cho một vài tác nhân (agent) trên lý thuyết (ví dụ: một chương trình phần mềm nhỏ), ý tưởng là làm cho agent có khả năng quyết định một hành động (action) dựa trên trạng thái (state) hiện tại của nó, dựa vào phần thưởng (reward) nhận được cho mỗi action và mục tiêu tối đa hóa lợi ích về lâu dài. Vì vậy, trong khi học có giám sát cho thuật toán biết chính xác những gì nó nên học để xuất ra thì học tăng cường dựa vào cơ chế ‘phần thưởng’ (mục đích ngắn hạn) để việc đưa ra quyết định tốt theo thời gian, và không trực tiếp cho thuật toán biết những quyết định chính xác để lựa chọn. Ngay từ đầu, nó đã là một mô hình ra quyết định khá trừu tượng - có một số lượng hữu hạn các trạng thái, và tập các hành động đã biết trước đi cùng với phần thưởng đã biết cho mỗi trạng thái. Điều này giúp ta dễ dàng viết các phương trình tìm tập các hành động tối ưu, nhưng khó áp dụng cho bài toán thực tế - các bài toán có số lượng trạng thái liên tục và khó để xác định phần thưởng cho từng  hành động ở mỗi trạng thái.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 437px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/76663048c26c0a38b6a7d54c00e86e25/fca8a/53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.35294117647058%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe9ENoP/xAAXEAADAQAAAAAAAAAAAAAAAAAAARAR/9oACAEBAAEFAqzZ/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAEhEBH/2gAIAQEAAT8hYnDpGEf/2gAMAwEAAgADAAAAECDP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBAAAgICAwAAAAAAAAAAAAAAASEAEUFRMWFx/9oACAEBAAE/ECJKF+wBKmdalMxF9wsFzeYCeZ//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpeg"
+        title="53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpeg"
+        src="/static/76663048c26c0a38b6a7d54c00e86e25/fca8a/53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpg"
+        srcset="/static/76663048c26c0a38b6a7d54c00e86e25/651be/53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpg 170w,
+/static/76663048c26c0a38b6a7d54c00e86e25/d30a3/53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpg 340w,
+/static/76663048c26c0a38b6a7d54c00e86e25/fca8a/53f06dbbb88f1532b225bfaaa1cafd747d5a11a1.jpg 437w"
+        sizes="(max-width: 437px) 100vw, 437px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Học tăng cường (</em><em><a href="http://www2.hawaii.edu/~chenx/ics699rl/grid/rl.html" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Đây là lúc mạng nơ-ron xuất hiện. Học máy nói chung và mạng thần kinh nói riêng, rất tốt trong việc xử lý dữ liệu liên tục hỗn độn hoặc các hàm khó định nghĩa bằng cách học chúng từ các mẫu dữ liệu có sẵn. Mặc dù phân loại là phần quan trọng của các mạng nơ-ron, nhưng chúng cũng hữu ích cho nhiều loại bài toán khác (như dùng cho bộ lọc thích ứng trong các mạch điện). Do đó, theo sau sự hồi sinh của các nghiên cứu nhờ thuật toán lan truyền ngược, mọi người đã sớm nghĩ ra cách tận dụng sức mạnh của mạng nơ-ron để thực hiện việc học tăng cường. Một trong những ví dụ đầu của việc này là giải một bài toán kinh điển nhưng đơn giản: sự cân bằng của một chiếc gậy trên một bệ chuyển động, được học sinh trong các lớp điều khiển ở khắp mọi nơi gọi là bài toán con lắc ngược.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/81c39af4888307cada1730bb410feb4f/212bf/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.35294117647059%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAegiGkH/xAAXEAADAQAAAAAAAAAAAAAAAAABEBEg/9oACAEBAAEFAsQL/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGRAAAgMBAAAAAAAAAAAAAAAAEBEAASFB/9oACAEBAAE/IZ06NUx//9oADAMBAAIAAwAAABBwz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAAICAwEAAAAAAAAAAAAAAAERABAhMUFh/9oACAEBAAE/EI9PKUAjERdWa//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpeg"
+        title="bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpeg"
+        src="/static/81c39af4888307cada1730bb410feb4f/7bf67/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg"
+        srcset="/static/81c39af4888307cada1730bb410feb4f/651be/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg 170w,
+/static/81c39af4888307cada1730bb410feb4f/d30a3/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg 340w,
+/static/81c39af4888307cada1730bb410feb4f/7bf67/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg 680w,
+/static/81c39af4888307cada1730bb410feb4f/212bf/bbf82157f8bfdcdd3b13eb8bbaaeac7a7e4e284e.jpg 768w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Bài toán điều khiển con lắc đôi - một bước tiến so với phiên bản con lắc đơn, đây là một tác vụ điều khiển và học tăng cường kinh điển.</em></p>
+<p>Như với lọc thích ứng, nghiên cứu này có liên quan chặt chẽ đến Kỹ thuật Điện, nơi lý thuyết điều khiển đã là một lĩnh vực con chính trong nhiều thập kỷ trước khi xuất hiện mạng nơ-ron. Mặc dù lĩnh vực này đã nghĩ ra cách để đối phó với nhiều bài toán thông qua phân tích trực tiếp, nhưng việc có một phương tiện cho các tình huống phức tạp hơn thông qua việc học tỏ ra hữu ích, như được chứng minh bằng 7000 trích dẫn của bài báo năm 1990 “Identification and control of dynamical systems using neural networks” (Xác định và điều khiển hệ thống động lực sử dụng mạng nơ-ron): Chắc là có thể đoán trước được, có một lĩnh vực khác tách biệt với học máy, nơi mạng nơ-ron tỏ ra hữu ích - robotics (robot học). Một ví dụ điển hình của việc sử dụng mạng nơ-ron cho robotics những ngày đầu đến từ NavLab (phòng thí nghiệm thuộc CMU) với bài báo năm 1989 “Alvinn: An autonomous land vehicle in a neural network” (Alvinn: Một phương tiện tự hành trong mạng nơ-ron).</p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.42857142857143%; position: relative; height: 0; overflow: hidden; " > <div class="embedVideo-container"> <iframe title src="https://www.youtube.com/embed/5-acCtyKf7E?rel=0" class="embedVideo-iframe" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; " allowfullscreen></iframe> </div> </div></p>
+<p>Như đã thảo luận trong bài báo, mạng nơ-ron trong hệ thống này học cách điều khiển phương tiện thông qua việc học có giám sát thuần túy bằng cách sử dụng cảm biến và dữ liệu lái được ghi lại khi con người lái xe. Cũng đã có nghiên cứu về việc dạy robot sử dụng phương pháp học tăng cường một cách đặc biệt, như trong một luận án tiến sĩ năm 1993 “Reinforcement learning for robots using neural networks” (Học tăng cường cho robt sử dụng mạng nơ-ron). Luận án này cho thấy robot có thể được dạy các hành vi như theo sát tường và đi qua cửa trong lượng thời gian hợp lý, một điểm tốt khi xét đến bài toán con lắc ngược trước đây - đòi hỏi thời gian đào tạo không thực tế.</p>
+<p>Sự đa dạng các ứng dụng trong nhiều lĩnh vực khác chắc chắn rất thú vị, nhưng tất nhiên hầu hết các nghiên cứu về học tăng cường và mạng nơ-ron đều đang diễn ra trong lĩnh vực trí tuệ nhân tạo (AI) và học máy. Và ở đây, ta đã đạt được một trong những kết quả quan trọng nhất trong lịch sử của học tăng cường: một mạng nơ-ron học để trở thành một kỳ thủ Backgammon (cờ tào cáo) đẳng cấp thế giới. Được đặt tên là TD-Gammon, mạng nơ-ron này được huấn luyện bằng cách sử dụng thuật toán học tăng cường tiêu chuẩn và là một trong những minh chứng đầu tiên về việc học tăng cường có thể hoạt động tốt hơn con người trong các nhiệm vụ tương đối phức tạp. Đặc biệt hơn cả là hướng tiếp cận học tăng cường đã giải quyết được bài toán trên, vì nghiên cứu tương tự cho thấy chỉ sử dụng mạng nơ-ron mà không học tăng cường gần như không hoạt động.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7dd7c90a92dbf6dc789924aacc650262/41099/64c960f0a369209b24d6d362ab671b621d18b15a.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.764705882352935%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHdSiWjD//EABcQAAMBAAAAAAAAAAAAAAAAAAABEAL/2gAIAQEAAQUCYpq//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERIRAxYYGR/9oACAEBAAE/IaK76IpUvCeGboW8f//aAAwDAQACAAMAAAAQ48//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAeEAEAAgEEAwAAAAAAAAAAAAABABFBECExUXHw8f/aAAgBAQABPxBmGfKKpc5RzPcRNF7dRoKU+6f/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="64c960f0a369209b24d6d362ab671b621d18b15a.jpeg"
+        title="64c960f0a369209b24d6d362ab671b621d18b15a.jpeg"
+        src="/static/7dd7c90a92dbf6dc789924aacc650262/41099/64c960f0a369209b24d6d362ab671b621d18b15a.jpg"
+        srcset="/static/7dd7c90a92dbf6dc789924aacc650262/651be/64c960f0a369209b24d6d362ab671b621d18b15a.jpg 170w,
+/static/7dd7c90a92dbf6dc789924aacc650262/d30a3/64c960f0a369209b24d6d362ab671b621d18b15a.jpg 340w,
+/static/7dd7c90a92dbf6dc789924aacc650262/41099/64c960f0a369209b24d6d362ab671b621d18b15a.jpg 500w"
+        sizes="(max-width: 500px) 100vw, 500px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Mạng nơ-ron học cách chơi Backgammon đẳng cấp kỳ thủ.</em></p>
+<p>Nhưng, như chúng ta đã thấy trước đây và sẽ thấy lần nữa trong AI, nghiên cứu đã đi vào ngõ cụt. Bài toán tiếp theo được dự đoán là có thể giải quyết bằng cách sử dụng phương pháp TD-Gammon đã được Sebastian Thrun nghiên cứu trong “Learning To Play the Game of Chess” (Học chơi cờ vua), năm 1995, cho kết quả không tốt. Mặc dù mạng nơ-ron đã học được cách chơi tốt, chắc chắn tốt hơn so với một người mới hoàn toàn, nhưng nó vẫn kém hơn nhiều so với một chương trình máy tính tiêu chuẩn (GNU-Chess) được triển khai từ rất lâu trước đó. Điều tương tự xảy ra với thử thách lâu năm khác của AI, Go (cờ vây). Hãy xem, cách chơi của TD-Gammon khá hạn hẹp - nó học cách đánh giá vị trí tốt, nên có thể đi tiếp mà không thực hiện bất kỳ “tìm kiếm“ nào cho một loạt nhiều nước đi trong tương lai, nó chỉ chọn nước đi dẫn đến vị trí tiếp theo tốt nhất. Nhưng điều này đơn giản là không thể xảy ra trong cờ vua hoặc cờ vây, những trò chơi thách thức AI vì cần có tầm nhìn xa hơn, cho nhiều nước đi trong tương lai, và có rất nhiều khả năng kết hợp các nước đi với nhau. Bên cạnh đó, ngay cả khi thuật toán đã thông minh hơn, phần cứng ở thời điểm đó vẫn không đáp ứng được yêu cầu - Thrun báo cáo rằng “NeuroChess (các agent chơi cờ) chơi khá kém, vì nó dành phần lớn thời gian để đánh giá bàn cờ. Tính toán một hàm dùng mạng nơ-ron mất chi phí lớn hơn hai bậc so với một hàm tuyến tính được tối ưu hóa (như là GNU-Chess)“. Sự yếu kém của máy tính thời đó so với nhu cầu của mạng nơ-ron là một vấn đề rất thực tế, và như chúng ta sẽ thấy nó không phải là vấn đề duy nhất…</p>
+<h2>Những vòng lặp có phần ngớ ngẩn</h2>
+<p>Dù học không  giám sát và học tăng cường có vẻ hay ho, tôi nghĩ học có giám sát vẫn là lựa chọn yêu thích của tôi khi nhắc đến mạng nơ-ron. Hẳn là việc học các mô hình dữ liệu theo xác suất thật thú vị, nhưng thú vị hơn nhiều khi các vấn đề cụ thể được giải quyết bằng lan truyền ngược. Chúng ta đã thấy cách Yann Lecun đạt được thành tựu khá tốt với nhận dạng chữ số viết tay (một công nghệ đã được triển khai trên toàn nước Mỹ cho việc đọc-kiểm và hơn thế nữa sau đó), nhưng có một nhiệm vụ quan trọng khác cũng đang được thực hiện vào thời điểm đó: hiểu lời nói của con người.</p>
+<p>Như với chữ viết, khá khó khăn để hiểu được lời nói của con người do thực tế có muôn hình vạn trạng cách một từ được nói. Tuy nhiên, có một thách thức nữa ở đây: những chuỗi đầu vào dài. Với hình ảnh, đơn giản chỉ là cắt ra một chữ cái từ một ảnh và có một mạng nơ-ron cho bạn biết đó là chữ cái nào, theo kiểu đầu vào → đầu ra. Nhưng với audio, chuyện không đơn giản thế - tách lời nói thành các ký tự là một việc phi thực tế, thậm chí việc tìm các từ riêng lẻ trong lời nói cũng chẳng đơn giản hơn. Thêm vào đó, lời nói của con người nhìn chung sẽ dễ hiểu hơn khi đặt vào một ngữ cảnh cụ thể hơn là bị tách rời. Mặc dù cấu trúc này hoạt động khá tốt để xử lý từng thứ một như hình ảnh, theo kiểu đầu vào → đầu ra, nó không hoàn toàn phù hợp với các luồng thông tin dài như âm thanh hoặc văn bản. Mạng nơ-ron không có ‘bộ nhớ’ để một đầu vào có thể ảnh hưởng đến đầu vào khác được xử lý sau đó, nhưng đây chính xác là cách con người chúng ta xử lý âm thanh hoặc văn bản - một chuỗi các từ hoặc âm thanh, thay vì một tập các đầu vào đơn lẻ. Mấu chốt ở đây là: để giải quyết bài toán hiểu được lời nói của con người, các nhà nghiên cứu đã tìm cách sửa đổi mạng mạng nơ-ron để xử lý đầu vào dưới dạng một luồng dữ liệu như trong lời nói chứ không phải một tập rời rạc như với hình ảnh.</p>
+<p>Alexander Waibel và các cộng sự (bao gồm Hinton) có một cách tiếp cận cho vấn đề này, được giới thiệu năm 1989 “Phoneme recognition using time-delay neural networks” (Nhận dạng âm vị bằng cách sử dụng mạng nơron với độ trễ thời gian). Các mạng nơ-ron có độ trễ thời gian (TDNN) này rất giống với mạng nơ-ron thông thường, ngoại trừ mỗi nơ-ron chỉ xử lý một tập con của đầu vào và có một số bộ trọng số cho các độ trễ khác nhau của dữ liệu đầu vào. Nói cách khác, với một chuỗi đầu vào âm thanh, một ‘cửa sổ trượt‘ của âm thanh được đưa vào mạng và khi cửa sổ di chuyển, các bit âm thanh sẽ được xử lý bởi mỗi nơ-ron với các bộ trọng số khác nhau dựa trên vị trí của chúng trong cửa sổ trượt. Có thể hiểu rõ hơn qua một minh họa nhanh dưới đây:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 477px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a9396c9a71922e767b781d7188e8a6d8/b18ba/cdf545025ac6427af2de31cd419a125ef04d90d2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.64705882352942%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHflpKAX//EABcQAAMBAAAAAAAAAAAAAAAAAAABEBH/2gAIAQEAAQUCNqn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAACAwEAAAAAAAAAAAAAAAABMQAQEUH/2gAIAQEAAT8hTMGjRU4r/9oADAMBAAIAAwAAABBvz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAAICAgMAAAAAAAAAAAAAAAABESExYVFxwf/aAAgBAQABPxBUyPY5qiFsmcEm9X2LC9F8n//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="cdf545025ac6427af2de31cd419a125ef04d90d2.jpeg"
+        title="cdf545025ac6427af2de31cd419a125ef04d90d2.jpeg"
+        src="/static/a9396c9a71922e767b781d7188e8a6d8/b18ba/cdf545025ac6427af2de31cd419a125ef04d90d2.jpg"
+        srcset="/static/a9396c9a71922e767b781d7188e8a6d8/651be/cdf545025ac6427af2de31cd419a125ef04d90d2.jpg 170w,
+/static/a9396c9a71922e767b781d7188e8a6d8/d30a3/cdf545025ac6427af2de31cd419a125ef04d90d2.jpg 340w,
+/static/a9396c9a71922e767b781d7188e8a6d8/b18ba/cdf545025ac6427af2de31cd419a125ef04d90d2.jpg 477w"
+        sizes="(max-width: 477px) 100vw, 477px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Mạng nơron với độ trễ thời gian (</em><em><a href="https://electroviees.wordpress.com/tag/chacha/" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Theo một nghĩa nào đó, điều này khá giống với những gì CNN làm - thay vì xử lý toàn bộ dữ liệu đầu vào cùng lúc, mỗi node chỉ xem xét một tập hợp con tại một thời điểm và thực hiện tính toán tương tự cho từng tập hợp con. Sự khác biệt chính ở đây là không có ý niệm về thời gian trong CNN và ‘cửa sổ‘ đầu vào cho mỗi node luôn được di chuyển trên toàn bộ ảnh để tính toán kết quả, trong khi TDNN thực sự là chuỗi đầu vào và đầu ra của dữ liệu. Có một sự thật thú vị: theo như Hinton, ý tưởng về TDNN là thứ đã truyền cảm hứng cho LeCun phát triển mạng nơ-ron tích chập. Dẫu vậy, CNN đã trở nên cần thiết cho việc xử lý hình ảnh, trong khi với nhận dạng giọng nói, TDNN đã bị vượt qua bởi một cách tiếp cận khác - mạng nơ-ron hồi tiếp (RNN). Tất cả các mạng đã được thảo luận cho đến nay đều là mạng truyền xuôi - đầu ra của các nơ-ron trong một lớp nhất định đóng vai trò là đầu vào chỉ cho các nơ-ron ở lớp tiếp theo. Nhưng, không nhất thiết phải như vậy - không có gì cấm các nhà khoa học máy tính dũng cảm dùng đầu ra của lớp cuối cùng như một đầu vào cho lớp đầu tiên, hoặc dùng đầu ra của một nơ-ron như đầu vào cho chính nó. Bằng cách cho đầu ra của mạng ‘vòng lặp‘ trở lại, việc làm cho mạng có khả năng nhớ trước đây đã được giải quyết một cách rất dễ dàng!</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ca05f53e88756ab6a00339677ce32482/066f9/e212b25b29ef1375a69edc1291a8669c57b92680.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.41176470588235%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdhGGqv/xAAYEAEBAQEBAAAAAAAAAAAAAAABABIQEf/aAAgBAQABBQIht8D2xf/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAABEDH/2gAIAQEABj8Cdc0//8QAGRABAQADAQAAAAAAAAAAAAAAAQAQETFh/9oACAEBAAE/IVoiheiORusH/9oADAMBAAIAAwAAABDvz//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/EGf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEAAwABBQAAAAAAAAAAAAABABEhMUFRYbHB/9oACAEBAAE/EEovT7Hlm5Q95QxF8QqZvHuDJhKdMil5T//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="e212b25b29ef1375a69edc1291a8669c57b92680.jpeg"
+        title="e212b25b29ef1375a69edc1291a8669c57b92680.jpeg"
+        src="/static/ca05f53e88756ab6a00339677ce32482/066f9/e212b25b29ef1375a69edc1291a8669c57b92680.jpg"
+        srcset="/static/ca05f53e88756ab6a00339677ce32482/651be/e212b25b29ef1375a69edc1291a8669c57b92680.jpg 170w,
+/static/ca05f53e88756ab6a00339677ce32482/d30a3/e212b25b29ef1375a69edc1291a8669c57b92680.jpg 340w,
+/static/ca05f53e88756ab6a00339677ce32482/066f9/e212b25b29ef1375a69edc1291a8669c57b92680.jpg 400w"
+        sizes="(max-width: 400px) 100vw, 400px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Sơ đồ một mạng nơ-ron hồi tiếp. Nó có gợi nhớ đến máy Boltzmann trước đó? Chúng chính là những mạng nơ-ron hồi tiếp. (</em><em><a href="http://www.wolframalpha.com/docs/timeline/computable-knowledge-history-6.html" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Nhưng nó không hoàn toàn đơn giản thế. Nếu thuật toán lan truyền ngược dựa vào việc ‘lan truyền’ lỗi từ lớp đầu ra về các lớp trước đó, thì mọi thứ hoạt động thế nào nếu lớp đầu tiên kết nối trở lại với lớp cuối cùng? Lỗi sẽ được lan truyền từ lớp đầu tiên về lớp cuối và có thể tiếp tục lặp lại vô hạn quá trình này trong mạng. Giải pháp, được nghiên cứu độc lập bởi nhiều nhóm, là sự lan truyền ngược liên hồi (Backpropagation Through Time). Về cơ bản, ý tưởng là ‘bỏ cuộn‘ mạng nơ-ron hồi tiếp bằng cách coi mỗi vòng lặp qua mạng như một đầu vào cho một mạng nơ-ron khác và chỉ lặp lại một số lần giới hạn.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f8fb1974a93f4c9fec88e8f83db15530/b52a8/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.94117647058823%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3pCgf//EABUQAQEAAAAAAAAAAAAAAAAAABAR/9oACAEBAAEFAq//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAXEAADAQAAAAAAAAAAAAAAAAAAARFx/9oACAEBAAE/IRHRYf/aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAACAwEBAAAAAAAAAAAAAAAAAREhkUHw/9oACAEBAAE/EI8TFYj2iKKfT//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpeg"
+        title="2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpeg"
+        src="/static/f8fb1974a93f4c9fec88e8f83db15530/7bf67/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg"
+        srcset="/static/f8fb1974a93f4c9fec88e8f83db15530/651be/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg 170w,
+/static/f8fb1974a93f4c9fec88e8f83db15530/d30a3/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg 340w,
+/static/f8fb1974a93f4c9fec88e8f83db15530/7bf67/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg 680w,
+/static/f8fb1974a93f4c9fec88e8f83db15530/990cb/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg 1020w,
+/static/f8fb1974a93f4c9fec88e8f83db15530/b52a8/2b7e3b8e41ca260d01f4254d6e51b66c072a2876.jpg 1267w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một cái nhìn trực quan về khái niệm lan truyền ngược liên hồi (</em><em><a href="https://upload.wikimedia.org/wikipedia/en/e/ee/Unfold_through_time.png" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Ý tưởng khá đơn giản này thực sự đã hoạt động - nó có thể huấn luyện các mạng nơ-ron hồi tiếp. Và thực sự, nhiều người đã khám phá ứng dụng của RNN cho nhận dạng giọng nói. Tuy nhiên, đây là một ‘cú xoắn‘ mà bạn có thể đoán được: cách tiếp cận này không hoạt động tốt. Để hiểu vì sao, hãy cùng gặp một gã khổng lồ hiện đại khác của học sâu: Yoshua Bengio. Bắt đầu nghiên cứu về nhận dạng giọng nói với mạng nơ-ron vào khoảng năm 1986, ông là đồng tác giả của nhiều bài báo về sử dụng ANN và RNN để nhận dạng giọng nói, và cuối cùng làm việc tại Bell Labs về bài toán này giống như Yann LeCun đang làm về CNN ở đó. Trên thực tế, vào năm 1995, họ đã cùng viết bài báo tóm tắt “Convolutional Networks for Images, Speech, and Time-Series” (Mạng tích chập cho ảnh,  lời nói và dữ liệu thời gian), bài báo đầu tiên trong số nhiều sự hợp tác giữa họ. Tuy nhiên, trước đó - vào năm 1993, Bengio đã viết về “A Connectionist Approach to Speech Recognition” (Một phương pháp tiếp cận dựa trên kết nối để nhận dạng giọng nói). Đây là tóm tắt của ông về thất bại chung của việc giảng dạy hiệu quả RNN:</p>
+<h2>Bắt đầu có khả năng nói</h2>
+<p>Về Bengio, những đóng góp của ông đối với mạng nơ-ron còn hơn cả mong đợi với CNN và RNN. Đặc biệt, khi nhắc đến điều này, không thể không kể đến bài báo năm 2003 của ông: “A Neural Probabilistic Language Model” (Mô hình ngôn ngữ xác suất nơ-ron). Như tiêu đề ngụ ý, công trình này liên quan đến việc sử dụng mạng nơ-ron để mô hình hóa ngôn ngữ - một nhiệm vụ cơ bản trong lĩnh vực Xử lý ngôn ngữ tự nhiên (NLP), tập trung vào việc dự đoán những từ sẽ xuất hiện tiếp theo dựa vào một số từ trước nó (về cơ bản là tự động điền). Nhiệm vụ này sau đó đã được nghiên cứu trong một thời gian dài, với các phương pháp kinh điển như đếm tần suất các từ riêng lẻ và các cụm từ khác nhau (hay còn gọi là n-grams) xuất hiện trong một nhóm văn bản, sau đó sử dụng kết quả này để ước tính xác suất từ sẽ xuất hiện tiếp theo dựa trên những từ trước nó:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2929db0a35551aa77883dee863337f06/dc4d4/0a6b5435511821962656aa61823b5e01127699a3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.29411764705882%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3gUH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFxABAQEBAAAAAAAAAAAAAAAAAAERIf/aAAgBAQABPyG2ONf/2gAMAwEAAgADAAAAEIAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAFxABAQEBAAAAAAAAAAAAAAAAAQARgf/aAAgBAQABPxDoLQ7sBv/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="0a6b5435511821962656aa61823b5e01127699a3.jpeg"
+        title="0a6b5435511821962656aa61823b5e01127699a3.jpeg"
+        src="/static/2929db0a35551aa77883dee863337f06/7bf67/0a6b5435511821962656aa61823b5e01127699a3.jpg"
+        srcset="/static/2929db0a35551aa77883dee863337f06/651be/0a6b5435511821962656aa61823b5e01127699a3.jpg 170w,
+/static/2929db0a35551aa77883dee863337f06/d30a3/0a6b5435511821962656aa61823b5e01127699a3.jpg 340w,
+/static/2929db0a35551aa77883dee863337f06/7bf67/0a6b5435511821962656aa61823b5e01127699a3.jpg 680w,
+/static/2929db0a35551aa77883dee863337f06/dc4d4/0a6b5435511821962656aa61823b5e01127699a3.jpg 795w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Một minh họa trực quan của khái niệm lan truyền ngược liên hồi (</em><em><a href="https://thegradient.pub/understanding-evaluation-metrics-for-language-models/" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Mặc dù cách tiếp cận này rất thành công, nhưng nó cũng có những hạn chế nhất định, vì nó yêu cầu phải nhìn thấy một từ hoặc nhiều từ trước đó để dự đoán từ tiếp theo, mà ngôn ngữ của con người  thì có một số lượng lớn các từ với nhiều sự kết hợp có nghĩa theo cấp số nhân. Thêm vào đó, con người chúng ta không chỉ lý luận về ngôn ngữ dựa trên những gì chúng ta đã thấy mà còn cả những gì chúng ta biết về ý nghĩa của từng từ; nếu chúng ta chỉ thấy “I have a pet dog” và sau đó học được rằng có tồn tại một từ - chẳng hạn như “cat” - cũng là loài thú cưng phổ biến, thì chẳng có khó khăn gì để suy tưởng rằng “I have a pet cat” là điều mà người khác cũng có khả năng sẽ nói.</p>
+<p>Vì vậy, làm thế nào để máy tính hiểu được các từ khác nhau có ngữ nghĩa giống nhau ra sao? Xét cho cùng, ý nghĩa của các từ khá tinh tế, nên việc thực hiện một điều đơn giản như so sánh các định nghĩa của từ dựa trên cấu tạo của chúng thì không có khả năng hoạt động tốt. Và rồi, hóa ra sự tinh tế của ngữ nghĩa có thể được nắm bắt một cách độc đáo trong một định dạng dễ dàng hơn để đánh giá sự giống nhau: danh sách các con số. Giống như việc có thể tính khoảng cách của hai điểm bất kỳ trong không gian chiều, hai điểm bất kỳ trong không gian 100 chiều cũng có khoảng cách của riêng nó, và có thể nói rằng những điểm gần nhau thì tương tự nhau hơn là những điểm ở cách xa nhau. Do đó, nếu chúng ta có thể ánh xạ mọi từ đến một điểm thích hợp trong không gian nhiều chiều, sao cho các từ tương tự nhau được ánh xạ tới các điểm gần nhau, thì sẽ khá hữu ích cho việc mô hình hóa ngôn ngữ. Hinrich Schütze đã giới thiệu ý tưởng này trong bài báo “Word Space” (Không gian từ ngữ) năm 1993, trong đó ông đã chỉ ra cách tính “Word Vector” (vector từ) bằng việc xử lý ma trận trên số lượng cụm từ đồng xuất hiện, dẫn đến khả năng tìm thấy các từ tương tự nhất cho bất kỳ từ ngữ truy vấn nào:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8551f3993548972034bc7656ecf267d8/756c3/93765351de894131bde03736d4fd8e6abde6d1cb.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.35294117647059%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdaAWAf/xAAYEAACAwAAAAAAAAAAAAAAAAAAAQIiMf/aAAgBAQABBQJpliOf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAABBB/9oACAEBAAY/Air/xAAZEAACAwEAAAAAAAAAAAAAAAAAEQExQfH/2gAIAQEAAT8hU2xdCE2Z/9oADAMBAAIAAwAAABBwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQACAwAAAAAAAAAAAAAAAAERIQAQQf/aAAgBAQABPxBkCbOnUGuSvc//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="93765351de894131bde03736d4fd8e6abde6d1cb.jpeg"
+        title="93765351de894131bde03736d4fd8e6abde6d1cb.jpeg"
+        src="/static/8551f3993548972034bc7656ecf267d8/7bf67/93765351de894131bde03736d4fd8e6abde6d1cb.jpg"
+        srcset="/static/8551f3993548972034bc7656ecf267d8/651be/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 170w,
+/static/8551f3993548972034bc7656ecf267d8/d30a3/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 340w,
+/static/8551f3993548972034bc7656ecf267d8/7bf67/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 680w,
+/static/8551f3993548972034bc7656ecf267d8/990cb/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 1020w,
+/static/8551f3993548972034bc7656ecf267d8/c44b8/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 1360w,
+/static/8551f3993548972034bc7656ecf267d8/756c3/93765351de894131bde03736d4fd8e6abde6d1cb.jpg 1564w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Sử dụng vector từ để tìm các từ giống nhất với một số từ truy vấn. (</em><em><a href="https://wordrepr.danieldk.eu/schuetze-1993.pdf" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Vậy thì, mạng nơ-ron ở đâu trong bức tranh này? Có nhiều cách để tính vector từ và cách tiếp cận của bài báo trên chỉ là một trong số đó. Chuyện gì sẽ xảy nếu ta sử dụng các vector từ làm đầu vào cho mạng nơ-ron đã được tối ưu để thực hiện mô hình hóa ngôn ngữ một cách chính xác? Và sau đó, cả vector được liên kết với từ và khả năng tổng thể của mạng nơ-ron thực hiện mô hình hóa ngôn ngữ có thể được tối ưu hóa cùng nhau bằng cách sử dụng lan truyền ngược từ hàm lỗi thích hợp. Đây là nơi chúng ta quay lại với mô hình ngôn ngữ xác suất nơ-ron (Neural Probabilistic Language Model), vì về cơ bản đó là những gì bài báo mô tả.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7a9f1975df2aaf03faa7b898c37ef302/bc229/099743d6428c2394206026466711fd74d02146d7.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.94117647058823%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe9JTQP/xAAWEAEBAQAAAAAAAAAAAAAAAAAQAUH/2gAIAQEAAQUCdh//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAgMAAAAAAAAAAAAAAAAAARARMUFR/9oACAEBAAE/IWLO4viCP//aAAwDAQACAAMAAAAQow//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEAAgIDAQAAAAAAAAAAAAABABFBcRAhMaH/2gAIAQEAAT8Q3dGYHL44Q9sKhBaPCorJ/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="099743d6428c2394206026466711fd74d02146d7.jpeg"
+        title="099743d6428c2394206026466711fd74d02146d7.jpeg"
+        src="/static/7a9f1975df2aaf03faa7b898c37ef302/7bf67/099743d6428c2394206026466711fd74d02146d7.jpg"
+        srcset="/static/7a9f1975df2aaf03faa7b898c37ef302/651be/099743d6428c2394206026466711fd74d02146d7.jpg 170w,
+/static/7a9f1975df2aaf03faa7b898c37ef302/d30a3/099743d6428c2394206026466711fd74d02146d7.jpg 340w,
+/static/7a9f1975df2aaf03faa7b898c37ef302/7bf67/099743d6428c2394206026466711fd74d02146d7.jpg 680w,
+/static/7a9f1975df2aaf03faa7b898c37ef302/990cb/099743d6428c2394206026466711fd74d02146d7.jpg 1020w,
+/static/7a9f1975df2aaf03faa7b898c37ef302/c44b8/099743d6428c2394206026466711fd74d02146d7.jpg 1360w,
+/static/7a9f1975df2aaf03faa7b898c37ef302/bc229/099743d6428c2394206026466711fd74d02146d7.jpg 1554w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><em>Sơ đồ mạng nơ-ron được sử dụng để mô hình hóa ngôn ngữ trong bài báo này (</em><em><a href="https://jmlr.org/papers/volume3/tmp/bengio03a.pdf" target="_blank" rel="nofollow noopener noreferrer">Nguồn</a></em> <em>)</em></p>
+<p>Đây hiện là một công trình được trích dẫn rất nhiều, nhưng cũng như nhiều công trình khác mà chúng ta đã thấy ở trên, phải mất một thời gian để tính hữu ích của vector từ và mạng nơ-ron dùng cho mô hình hóa ngôn ngữ được công nhận. Chúng ta sẽ hiểu vì sao ở phần tiếp theo.</p>
+<h2>Một mùa đông AI mới bắt đầu nhen nhóm</h2>
+<p>Quay lại những năm 90 - vẫn còn một vấn đề. Một vấn đề lớn, mà gần đây đã có sự tiến bộ vượt bậc - lan truyền ngược. Mạng nơ-ron tích chập quan trọng một phần vì kỹ thuật lan truyền ngược không hoạt động tốt trên mạng nơ-ron bình thường có nhiều lớp. Và đó là chìa khóa thực sự dẫn đến học sâu - có nhiều lớp, trong các hệ thống ngày nay có tới 20 lớp trở lên. Nhưng đến cuối những năm 1980, người ta đã biết rằng các mạng nơ-ron sâu được huấn luyện với kỹ thuật lan truyền ngược không hoạt động tốt lắm và đặc biệt là không hoạt động tốt như các mạng có ít lớp hơn. Lý do, theo thuật ngữ cơ bản, là kỹ thuật lan truyền ngược dựa vào việc tìm ra lỗi ở lớp đầu ra và liên tiếp phân chia lỗi cho các lớp trước đó. Khi có nhiều lớp, sự phân chia lỗi dựa trên phép tính này kết thúc với những con số quá lớn (bùng nổ gradient) hoặc quá bé (tiêu biến gradient), và kết quả là mạng nơ-ron không hoạt động tốt lắm. Jurgen Schmidhuber, một chuyên gia khác về học sâu, cách giải thích chính thức hơn được tóm tắt như sau:</p>
+<p>Kỹ thuật lan truyền ngược liên hồi về cơ bản tương đương với một mạng nơ-ron nhiều lớp, vì vậy RNN đặc biệt khó huấn luyện bằng lan truyền ngược. Cả Sepp Hochreiter (được cố vấn bởi Schmidhuber) và Yoshua Bengio đều xuất bản các bài báo về việc không thể học thông tin lâu dài do hạn chế của lan truyền ngược. Việc phân tích vấn đề đã cho thấy một giải pháp - Schmidhuber và Hochreiter đã đưa ra một khái niệm rất quan trọng vào năm 1997, cơ bản giải quyết vấn đề về cách huấn luyện RNN, giống như CNN đã làm với mạng truyền xuôi - bộ nhớ ngắn hạn dài (<a href="http://deeplearning.cs.cmu.edu/pdfs/Hochreiter97_lstm.pdf" target="_blank" rel="nofollow noopener noreferrer">Long Short Term Memory</a> - LSTM). Nói một cách dễ hiểu, cũng như với CNN, bước đột phá LSTM cuối cùng chỉ là một thay đổi nhỏ đối với mô hình mạng nơ-ron bình thường:</p>
+<p>Tuy nhiên, điều này không giúp giải quyết được vấn đề lớn hơn về nhận thức rằng mạng nơ-ron rất khó và hoạt động không tốt. Chúng vẫn còn những bất tiện - máy tính không đủ nhanh, thuật toán không đủ thông minh và mọi người không hài lòng. Vì vậy, vào khoảng giữa những năm 90, một ”mùa đông AI” mới của mạng nơ-ron bắt đầu xuất hiện - cộng đồng một lần nữa mất niềm tin vào chúng. Một phương pháp mới được gọi là Support Vector Machines (SVM), hiểu đơn giản là một cách tối ưu về mặt toán học để huấn luyện một mô hình tương đương với mạng nơ-ron hai lớp đã được phát triển và bắt đầu tỏ ra vượt trội so với những khó khăn mà mạng nơ-ron đem lại. Trên thực tế, bài báo “Comparison of Learning Algorithms For Handwritten Digit Recognition” (So sánh các thuật toán học để nhận dạng chữ số viết tay) năm 1995 của LeCun và cộng sự nhận thấy rằng cách tiếp cận mới này hoạt động tốt hơn hoặc bằng với các phương pháp khác trừ những thiết kế mạng nơ-ron tốt nhất:</p>
+<p>Các phương pháp mới khác, đặc biệt là Random Forest, cũng tỏ ra rất hiệu quả và với lý thuyết toán đằng sau chúng. Vì vậy, mặc dù thực tế là CNN vẫn giữ được thế dẫn đầu về hiệu năng, sự hứng thú dành cho mạng nơ-ron đã tiêu tan và cộng đồng học máy lại lần nữa chối từ nó. ”Mùa đông AI” đã trở lại. Nhưng đừng lo, tiếp theo chúng ta sẽ xem cách một nhóm nhỏ các nhà nghiên cứu đã kiên trì theo đuổi và cuối cùng tạo ra học sâu (Deep Learning) như ngày nay.</p>
+<hr>
+<p><em>Dịch từ bài viết</em> <strong><em><a href="https://www.skynettoday.com/overviews/neural-net-history" target="_blank" rel="nofollow noopener noreferrer">A Brief History of Neural Nets and Deep Learning</a></em></strong> <em>, Andrey Kurenkov.</em></p>
+<hr></div></article></main><style data-emotion-css="1dvd3xe">.css-1dvd3xe{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-top:4.32rem;margin-bottom:4.32rem;}</style><nav class="css-1dvd3xe"><div><a rel="prev" style="margin-right:20px" href="/blog/smartphone-dang-khien-ban-ngu-di-song-khep-kin-va-kem-lanh-manh-nhung-tai-sao-ban-khong-the-dat-no-xuong/">← <!-- -->Smartphone đang khiến bạn ngu đi, sống khép kín và kém lành mạnh. Nhưng tại sao bạn không thể đặt nó xuống?</a></div><div><a rel="next" href="/blog/luoc-su-mang-no-ron-va-hoc-sau-phan-1/">Lược sử mạng nơ-ron và học sâu (Phần 1)<!-- --> →</a></div></nav><div id="utterances_container" class="[object Object]"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-178749604-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/luoc-su-mang-no-ron-va-hoc-sau-phan-2/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b0a644f56da2fcb271c9.js"],"app":["/app-4923a30df5fbaef1990b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9a962f82254429b9322.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-8abfb7a582e285e5f60f.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-6b200921d27737661eff.js"],"component---src-pages-index-js":["/component---src-pages-index-js-7bca69ee94cc1cbdd371.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e7e00cae44b30b25e00d.js"]};/*]]>*/</script><script src="/polyfill-b0a644f56da2fcb271c9.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-e7e00cae44b30b25e00d.js" async=""></script><script src="/f22e65116e117537b01f54252158ffae588a680c-df679a80f710d870b661.js" async=""></script><script src="/commons-92015316d9bca23ba7df.js" async=""></script><script src="/styles-c2fe8482057191dca484.js" async=""></script><script src="/app-4923a30df5fbaef1990b.js" async=""></script><script src="/framework-b20a991a486fcb196e62.js" async=""></script><script src="/webpack-runtime-c7481c731e7537e49e63.js" async=""></script></body></html>
